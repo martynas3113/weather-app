@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
     let temperatureDescriptionDOM = document.querySelector('.info > h3');
     let temperatureDegreeDOM = document.querySelector('.degree > p');
     let locationDOM = document.querySelector('.location > h1');
-    let iconDOM = document.querySelector('.info > .fa')
+    let iconDOM = document.querySelector('.info > .image')
     let dateDOM = document.querySelector('.date');
 
     if(navigator.geolocation) {
@@ -34,6 +34,7 @@ window.addEventListener('load', () => {
                 locationDOM.textContent = location;
                 // iconDOM.innerHTML = ;
                 dateDOM.textContent = date;
+                iconDOM.innerHTML = `<img class="image" src="./img/icons/${icon}.png" alt="">`
 
                 
             })
