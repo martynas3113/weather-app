@@ -1,0 +1,67 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/istockphoto-515706800-612x612.jpg);
+    background-size: cover;
+    background-position:50% 50%;
+    image-rendering: pixelated;
+    align-items: center;
+    padding: 100px 20px;
+    justify-items: center;
+    justify-content: space-between;
+    
+}
+
+.location {
+    display: inline-flexbox;
+    align-items: baseline;
+    text-align: center;
+    font-size: 20px;
+
+    
+}
+
+h1 {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.fa {
+    color: white;
+    margin-top: 5px;
+ 
+}
+
+.temperature {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.degree {
+    font-size: 60px;
+    display: inline-flex;
+}
+
+    .degree::after {
+        content: "\00b0""C";
+        font-size: 35px;
+        
+    }
+
+.info {
+    font-size: 40px;
+    text-align: center;
+}
+
+    .info > h3 {
+        font-size: 20px;
+    }
+
+    .info > p {
+        font-size: 20px;
+    }
