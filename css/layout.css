@@ -7,7 +7,7 @@ body {
     background-position:50% 50%;
     image-rendering: pixelated;
     align-items: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     justify-items: center;
     justify-content: space-between;
     
@@ -34,24 +34,31 @@ h1 {
  
 }
 
+.image {
+    width: 80px;
+}
+
 .temperature {
     color: white;
     display: inline-flex;
     align-items: center;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
+    
 }
 
 .degree {
     font-size: 60px;
     display: inline-flex;
+    
 }
 
     .degree::after {
-        content: "\00b0""C";
-        font-size: 35px;
-        
+        content: "\2103";
+        font-size: 40px;   
     }
+
+    
 
 .info {
     font-size: 40px;
@@ -64,4 +71,5 @@ h1 {
 
     .info > p {
         font-size: 20px;
+        margin-bottom: 40px;
     }
