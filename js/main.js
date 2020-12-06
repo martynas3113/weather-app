@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
     let locationDOM = document.querySelector('.location > h1');
     let iconDOM = document.querySelector('.info > .image')
     let dateDOM = document.querySelector('.date');
+    let feelsDOM = document.querySelector('.info > p');
 
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
@@ -21,12 +22,12 @@ window.addEventListener('load', () => {
                 
             })
             .then(data => {
-                console.log(api);
-                const temperature = data.main.temp;
+                const temperature = Math.round(data.main.temp)
                 const location = data.name;
                 const description = data.weather[0].description;
                 const icon = data.weather[0].icon;
                 const date = formatDate();
+                const feels  = Math.round(data.main.feels_like);
                 
 
                 temperatureDescriptionDOM.textContent = description;
@@ -35,6 +36,8 @@ window.addEventListener('load', () => {
                 // iconDOM.innerHTML = ;
                 dateDOM.textContent = date;
                 iconDOM.innerHTML = `<img class="image" src="./img/icons/${icon}.png" alt="">`
+                feelsDOM.textContent = feels;
+
 
                 
             })

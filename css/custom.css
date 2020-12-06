@@ -1,0 +1,16 @@
+@media (max-width:650px) {
+    .temperature {
+        width: 70%;
+    }
+}
+
+@media (min-width:650px) {
+ 
+ body {
+     padding:40px
+ }
+ 
+ .temperature {
+        width: 40%;
+    }
+}
