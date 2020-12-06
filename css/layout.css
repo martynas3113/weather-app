@@ -98,8 +98,15 @@ h1 {
     background-color: blue;
     height: 20vh;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(96px, 1fr));
+    grid-gap: 10px;
     overflow-x: scroll;
-    display: inline-flex;
+    /* padding: 0px 10px; */
+}
+
+.card {
+    background-color: blueviolet;
 }
 
   
