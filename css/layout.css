@@ -1,15 +1,22 @@
+@font-face {
+    src: url(../fonts/Ubuntu-Light.ttf);
+    font-family: 'Ubuntu';
+}
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(../img/istockphoto-515706800-612x612.jpg);
+    background-image: url(../img/pngtree-desert-landscape-cartoon-illustration-wind-background-image_231304.jpg);
     background-size: cover;
-    background-position:50% 50%;
+    background-position:30% 70%;
     image-rendering: pixelated;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 0px 0px 0px;
     justify-items: center;
     justify-content: space-between;
+    color: white;
+    font-family: "Ubuntu";
     
 }
 
@@ -42,7 +49,7 @@ h1 {
     color: white;
     display: inline-flex;
     align-items: center;
-    width: 90%;
+    /* width: 70%; */
     justify-content: space-between;
     
 }
@@ -62,9 +69,7 @@ h1 {
 
 .info {
     display:flex;
-    /* font-size: 40px; */
     flex-direction: column;
-    /* text-align: center; */
     align-items: center;
     
 }
@@ -75,8 +80,26 @@ h1 {
     }
 
     .info > p {
-        font-size: 12px;
+        font-size: 17px;
         margin-bottom: 40px;
+        line-height: 30px;
     }
+        .info > p::before {
+            content: "Feels like:"" ";
+        }
+        .info > p::after {
+            content: " \2103";
+        }
 
-   
+        .info > .image > img {
+            image-rendering: auto;
+        }
+.forecast {
+    background-color: blue;
+    height: 20vh;
+    width: 100%;
+    overflow-x: scroll;
+    display: inline-flex;
+}
+
+  
