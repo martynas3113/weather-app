@@ -1,3 +1,5 @@
+import { formatDate } from './formattedDate.js';
+
 window.addEventListener('load', () => {
     let long;
     let lat;
@@ -24,14 +26,14 @@ window.addEventListener('load', () => {
                 const location = data.name;
                 const description = data.weather[0].description;
                 const icon = data.weather[0].icon;
-                const date = new Date();
-                const format = date.getMonth();
+                const date = formatDate();
+                
 
                 temperatureDescriptionDOM.textContent = description;
                 temperatureDegreeDOM.textContent = temperature;
                 locationDOM.textContent = location;
                 // iconDOM.innerHTML = ;
-                dateDOM.textContent = format;
+                dateDOM.textContent = date;
 
                 
             })
