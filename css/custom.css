@@ -1,16 +1,26 @@
+
 @media (max-width:650px) {
     .temperature {
         width: 70%;
     }
 }
 
-@media (min-width:650px) {
+@media (min-width:640px) {
  
  body {
-     padding:40px
+     padding:40px 0px 0px 0px
  }
  
  .temperature {
         width: 40%;
+        display:flex;
+        flex-direction: row;
     }
+     .forecast {
+        height: 30vh;
+        overflow-x: scroll;
+        /* padding: 10px 0px */
+        font-size: 15px;
+        opacity: 85%;
+    } 
 }

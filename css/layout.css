@@ -7,17 +7,16 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(../img/pngtree-desert-landscape-cartoon-illustration-wind-background-image_231304.jpg);
+    background-image: url(../img/evening.png);
     background-size: cover;
-    background-position:30% 70%;
-    image-rendering: pixelated;
+    background-position:50% 50%;
+    image-rendering: auto;
     align-items: center;
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 10px 0px;
     justify-items: center;
     justify-content: space-between;
     color: white;
     font-family: "Ubuntu";
-    
 }
 
 .location {
@@ -47,9 +46,9 @@ h1 {
 
 .temperature {
     color: white;
-    display: inline-flex;
+    display:flex;
+    flex-direction:column;
     align-items: center;
-    /* width: 70%; */
     justify-content: space-between;
     
 }
@@ -71,6 +70,7 @@ h1 {
     display:flex;
     flex-direction: column;
     align-items: center;
+
     
 }
 
@@ -95,7 +95,7 @@ h1 {
             image-rendering: auto;
         }
 .forecast {
-    background-color: white;
+    /* background-color: #301857; */
     height: 20vh;
     width: 100%;
     display: grid;
@@ -105,6 +105,7 @@ h1 {
     /* padding: 0px 10px; */
     color: black;
     font-weight: 600;
+    /* color: white; */
 }
 
 .card {
@@ -113,6 +114,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border-right: 1px solid #ccc; */
+    border-radius: 20px;
+    
 }
 
     .card > img {

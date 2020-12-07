@@ -1,4 +1,4 @@
-import { milToDate } from './millisecondsToDate.js';
+import { milToDate } from './components/secondsToDay/millisecondsToDate.js';
 
 window.addEventListener('load', () => {
     let long;
@@ -18,14 +18,13 @@ window.addEventListener('load', () => {
                 .then(data => {
                     let dataLength = [data.daily.length].join();
 
-                    for (let i = 0; i < dataLength - 1; i++) {
+                    for (let i = 1; i < dataLength; i++) {
                         let dataTemp = Math.round([data.daily[i].temp.max].join())
                         let dataImg = [data.daily[i].weather[0].icon].join();
                         let dataDate = parseInt([data.daily[i].dt].join(), 10)
                         const HTML = `<div class="card"><p>${milToDate(dataDate)}</p> <img src="./img/icons/${dataImg}.png" alt=""><span>${dataTemp}</span> </div>`
                         cardsDOM.innerHTML += HTML;
                     }
-
 
                 })
         })
