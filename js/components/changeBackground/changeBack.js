@@ -7,7 +7,7 @@ function changeBack(){
         document.querySelector('body').style.backgroundImage = "url(../img/Morning.png)";
     }
     if(currentTime > 12 && currentTime < 18) {
-        document.querySelector('body').style.backgroundImage = "url(../img/day.png)";
+        document.querySelector('body').style.backgroundImage = "url(../img/dayTime.png)";
     }
     if(currentTime > 18) {
         document.querySelector('body').style.backgroundImage = "url(../img/evening.png)";
