@@ -6,7 +6,7 @@ function changeBack(){
     if(currentTime > 6 && currentTime < 12) {
         document.querySelector('body').style.backgroundImage = "url(../img/Morning.png)";
     }
-    if(currentTime > 12 && currentTime < 18) {
+    if(currentTime > 12 && currentTime < 17) {
         document.querySelector('body').style.backgroundImage = "url(../img/DayTime.png)";
     }
     if(currentTime > 18) {

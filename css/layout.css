@@ -54,13 +54,14 @@ h1 {
 }
 
 .degree {
-    font-size: 60px;
+    font-size: 100px;
     display: inline-flex;
+    padding-bottom: 30px
     
 }
 
     .degree::after {
-        content: "\2103";
+        content: "\00b0""C";
         font-size: 40px;   
     }
 
@@ -75,12 +76,12 @@ h1 {
 }
 
     .info > h3 {
-        font-size: 20px;
+        font-size: 25px;
         text-transform: capitalize;
     }
 
     .info > p {
-        font-size: 17px;
+        font-size: 18px;
         margin-bottom: 40px;
         line-height: 30px;
     }
@@ -93,6 +94,7 @@ h1 {
 
         .info > .image > img {
             image-rendering: auto;
+            filter: brightness(100);
         }
 .forecast {
     /* background-color: #301857; */
@@ -123,7 +125,10 @@ h1 {
         width: 50px;
     }
     .card > p {
-        font-size: 16px;
+        font-size: 17px;
+    }
+    .card > span {
+        font-size: 20px;
     }
 
 
