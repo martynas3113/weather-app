@@ -1,3 +1,7 @@
+![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
+![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)<br>
+
+
 # Weather-app
 Simple weather app for mobile devices with responsive design. For this project OpenWeather API was used.
 
